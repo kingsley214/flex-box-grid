@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="I!E=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  
+</head>
+  
+  <style>
+ nav u;{
+  display: flex;
+  justify-content: center;   
+     
+}
+a{text-decoration: none;
+  font-size: 45px;
+  font-weight: 400;
+  color:antiquewhite;
+  padding: 5px 12px 18px;
+  background-color: grey;
+} 
+
+*{
+  margin:0;
+  padding:0;
+}
+body{
+  background:aliceblue;
+  display: flex;
+  place-items: center;
+  min-height:100vh;
+  
+}
+main{
+  display:grid;
+  grid-template-areas:
+  'a a b'
+  'c d d'
+  'c e e'
+  ;
+  gap: 5px;
+  width: 30%;
+  margin: auto;
+  height: 300px;
+}
+main div{
+  padding:2px;
+  text-align: center;
+}
+.item-a{
+  background-color: #ed0202;
+  grid-area: a;
+}
+.item-b{
+  background-color: hsl(35, 83%, 49%);
+  grid-area: b;
+}
+.item-c{
+  background-color: #12af49;
+  grid-area: c;
+}
+.item-d{
+  background-color:#088ba6;
+  grid-area: d;
+}
+.item-e{
+  background-color: #088ba6;
+  grid-area: e;
+}
+  </style>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Flex</a></li>
+
+        <li><a href="grid.html">Grid</a></li>
+      </ul>
+    </nav>
+  </header>
+   <body>
+     <main>
+    <div class="item-a"></div>
+    <div class="item-b"></div>
+    <div class="item-c"></div>
+    <div class="item-d"></div>
+    <div class="item-e"></div>
+  </main>
+     
+</body>
+</html>
